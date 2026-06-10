@@ -1,0 +1,47 @@
+{
+  "name": "raya-bingo",
+  "version": "1.0.0",
+  "description": "Real-money Ethiopian Bingo game with Telebirr integration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "nodemon server/index.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server/index.js",
+    "db:migrate": "node server/db/migrate.js",
+    "db:seed": "node server/db/seed.js"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.294.0",
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "jsonwebtoken": "^9.1.2",
+    "bcryptjs": "^2.4.3",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "redis": "^4.6.12",
+    "axios-retry": "^3.8.0",
+    "web-speech-api": "^0.0.1",
+    "@google-cloud/text-to-speech": "^5.3.0",
+    "stripe": "^14.16.0",
+    "twilio": "^4.10.0",
+    "uuid": "^9.0.1",
+    "tailwindcss": "^3.3.6",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "nodemon": "^3.0.2",
+    "concurrently": "^8.2.2",
+    "tailwindcss": "^3.3.6"
+  }
+}
